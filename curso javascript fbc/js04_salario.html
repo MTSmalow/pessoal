@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<title>js04_salario.html - aninhamento de if </title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+<script lenguage="JavaScript">
+
+	var js_qht;
+	var js_vht;
+	var js_inss;
+	var js_tdes;
+	var js_sb;
+	var js_sl;
+
+js_qht = parseFload(window.propt('informe  a quantidade de horas trabalhadas/mes: (135 a 180)' , '00') );
+ja_vht = parsefloat(window.prompt('informe o valor da hora trabalhada: (25 a 50)','00'));
+js_inss = parsefloat(window.pronpt('informe o percentual de desconto INSS: (5 a 15)','00'));
+
+js_sb = js_vht * js_qht;
+js_tdes = (js_inss/100) * js_sb;
+js_sl = js_sb - js_tdes;
