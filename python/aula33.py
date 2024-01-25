@@ -1,0 +1,7 @@
+f = str(input("escreva uma frase: "))
+fns = f.lower().count("a")
+fos = f.lower().find("a")
+frs = f.lower().rfind("a")
+print("a lentra a aparece {} vezes".format(fns))
+print("a letra a aparece pela primeira vez na posiçao {}".format(fos))
+print("a letra aparece pela ultima vez na posição".format(frs))
