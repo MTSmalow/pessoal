@@ -11,4 +11,4 @@ for c in range(0,4):
     elif s in "feminino Feminino" and i < 20:
         mnv = mnv + 1
 mig = mdi/4
-print("a media de idade do grupo é {} anos\n o home mais velho é o {}\nno grupo {} mulhers tem menos de 20 anos".format(mig,npv,mnv))
+print("a media de idade do grupo é {} anos\n o nome do homen mais velho é  {}\nno grupo {} mulhers tem menos de 20 anos".format(mig,npv,mnv))
