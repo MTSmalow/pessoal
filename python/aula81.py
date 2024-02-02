@@ -1,0 +1,11 @@
+import random
+n1 = random.randint(0,1000)
+n2 = random.randint(0,1000)
+n3 = random.randint(0,1000)
+n4 = random.randint(0,1000)
+n5 = random.randint(0,1000)
+t = (n1,n2,n3,n4,n5)
+ma = max(t, key=int)
+me = min(t, key=int)
+print(f"a lista dos numeros é {t}")
+print(f"o maior numero é {ma}, e o menor é {me}")
