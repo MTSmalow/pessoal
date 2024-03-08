@@ -1,0 +1,16 @@
+C:\Users\professor\Desktop\ProjetoClasseUsuario\ProjetoClasseUsuario\bin\Debug\ProjetoClasseUsuario.exe.config
+C:\Users\professor\Desktop\ProjetoClasseUsuario\ProjetoClasseUsuario\bin\Debug\ProjetoClasseUsuario.exe
+C:\Users\professor\Desktop\ProjetoClasseUsuario\ProjetoClasseUsuario\bin\Debug\ProjetoClasseUsuario.pdb
+C:\Users\professor\Desktop\ProjetoClasseUsuario\ProjetoClasseUsuario\obj\Debug\ProjetoClasseUsuario.csproj.AssemblyReference.cache
+C:\Users\professor\Desktop\ProjetoClasseUsuario\ProjetoClasseUsuario\obj\Debug\ProjetoClasseUsuario.csproj.SuggestedBindingRedirects.cache
+C:\Users\professor\Desktop\ProjetoClasseUsuario\ProjetoClasseUsuario\obj\Debug\ProjetoClasseUsuario.csproj.CoreCompileInputs.cache
+C:\Users\professor\Desktop\ProjetoClasseUsuario\ProjetoClasseUsuario\obj\Debug\ProjetoClasseUsuario.exe
+C:\Users\professor\Desktop\ProjetoClasseUsuario\ProjetoClasseUsuario\obj\Debug\ProjetoClasseUsuario.pdb
+C:\Users\Aluno\Desktop\C#\ProjetoClasseUsuario\ProjetoClasseUsuario\bin\Debug\ProjetoClasseUsuario.exe.config
+C:\Users\Aluno\Desktop\C#\ProjetoClasseUsuario\ProjetoClasseUsuario\bin\Debug\ProjetoClasseUsuario.exe
+C:\Users\Aluno\Desktop\C#\ProjetoClasseUsuario\ProjetoClasseUsuario\bin\Debug\ProjetoClasseUsuario.pdb
+C:\Users\Aluno\Desktop\C#\ProjetoClasseUsuario\ProjetoClasseUsuario\obj\Debug\ProjetoClasseUsuario.csproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\C#\ProjetoClasseUsuario\ProjetoClasseUsuario\obj\Debug\ProjetoClasseUsuario.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Desktop\C#\ProjetoClasseUsuario\ProjetoClasseUsuario\obj\Debug\ProjetoClasseUsuario.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\C#\ProjetoClasseUsuario\ProjetoClasseUsuario\obj\Debug\ProjetoClasseUsuario.exe
+C:\Users\Aluno\Desktop\C#\ProjetoClasseUsuario\ProjetoClasseUsuario\obj\Debug\ProjetoClasseUsuario.pdb

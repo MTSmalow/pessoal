@@ -1,0 +1,8 @@
+F:\2-ano\C#\ProjetoCalculo\ProjetoCalculo\bin\Debug\ProjetoCalculo.exe.config
+F:\2-ano\C#\ProjetoCalculo\ProjetoCalculo\bin\Debug\ProjetoCalculo.exe
+F:\2-ano\C#\ProjetoCalculo\ProjetoCalculo\bin\Debug\ProjetoCalculo.pdb
+F:\2-ano\C#\ProjetoCalculo\ProjetoCalculo\obj\Debug\ProjetoCalculo.csproj.AssemblyReference.cache
+F:\2-ano\C#\ProjetoCalculo\ProjetoCalculo\obj\Debug\ProjetoCalculo.csproj.SuggestedBindingRedirects.cache
+F:\2-ano\C#\ProjetoCalculo\ProjetoCalculo\obj\Debug\ProjetoCalculo.csproj.CoreCompileInputs.cache
+F:\2-ano\C#\ProjetoCalculo\ProjetoCalculo\obj\Debug\ProjetoCalculo.exe
+F:\2-ano\C#\ProjetoCalculo\ProjetoCalculo\obj\Debug\ProjetoCalculo.pdb
