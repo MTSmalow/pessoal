@@ -1,6 +1,6 @@
 CREATE database cadastro;
 use cadastro;
-
+''
 CREATE Table cidade (
     id_cidade INTEGER Not NULL auto_increment,
     n_cid VARCHAR(100) Not null UNIQUE,
