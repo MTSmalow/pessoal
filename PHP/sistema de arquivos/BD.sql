@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS arquivos;
+
+USE arquivos;
+
+CREATE TABLE IF NOT EXISTS arquivos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    tipo VARCHAR(100) NOT NULL,
+    tamanho INT NOT NULL,
+    caminho TEXT NOT NULL,
+    data_upload TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
