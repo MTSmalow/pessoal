@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 17, 2024 at 09:27 PM
+-- Generation Time: Sep 19, 2024 at 12:17 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -29,6 +29,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `id` int NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(15) NOT NULL,
   `hash` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -36,9 +39,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `hash`) VALUES
-(1, '749f09bade8aca755660eeb17792da880218d4fbdc4e25fbec279d7fe9f65d70'),
-(2, 'b2cd0042af96e63b11de16266262bda38d148dc90f6b1a8b76549e148df708a6');
+INSERT INTO `users` (`id`, `username`, `email`, `phone`, `hash`) VALUES
+(1, 'aluno', 'medeirosdinieduardo@gmail.com', '11984333615', 'b2cd0042af96e63b11de16266262bda38d148dc90f6b1a8b76549e148df708a6');
 
 --
 -- Indexes for dumped tables
@@ -58,7 +60,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
