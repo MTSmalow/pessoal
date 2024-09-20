@@ -1,39 +1,51 @@
 <?php
 session_start();
-require 'db_connect.php'; // Arquivo para conexão ao banco de dados
+require 'db_connect.php';
 
-// Verifica se os dados de username e password foram enviados
-if (!isset($_POST['username'], $_POST['password'])) {
+// Verifica se os campos obrigatórios foram enviados
+if (!isset($_POST['login'], $_POST['password'])) {
     header('Location: login.php?error=true');
     exit();
 }
 
-// Cria o hash de username e password combinados
-$input_hash = hash('sha256', $_POST['username'] . $_POST['password']);
+$login = $_POST['login'];
+$password = $_POST['password'];
 
-// Consulta no banco de dados para verificar se o hash existe
-$sql = "SELECT * FROM users WHERE hash = ?";
+// Gera os hashes para verificar
+$hash_username_password = hash('sha256', $login . $password);
+$hash_email_password = hash('sha256', $login . $password);
+
+// Tenta fazer login usando o nome de usuário ou o email
+$sql = "SELECT * FROM users WHERE (hash_username_password = ? OR hash_email_password = ?)";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$input_hash]);
+$stmt->execute([$hash_username_password, $hash_email_password]);
 
 $user = $stmt->fetch();
 
 if ($user) {
-    // Se o hash for encontrado, inicia a sessão
-    $_SESSION['username'] = $_POST['username'];
+    // Se o usuário for encontrado, inicia a sessão
+    $_SESSION['username'] = $user['username'];
     header('Location: protected.php');
     exit();
 } else {
-    // Se o hash não for encontrado, redireciona com erro
+    // Se não for encontrado, redireciona com erro
     header('Location: login.php?error=true');
     exit();
 }
 ?>
 
-<!-- Criação do Hash Combinado: O hash('sha256', $username . $password) combina o nome de usuário e a senha em uma
-  string única, depois aplica o hash sha256 para garantir a segurança.
+?>
+<!-- 
+Cadastro: Quando o usuário se cadastra, são gerados dois hashes:
 
-Verificação no Banco de Dados: No authenticate.php, o sistema busca no banco de dados o hash gerado
- e verifica se ele existe. Se for encontrado, o login é bem-sucedido.
+hash_username_password: Combinação do nome de usuário com a senha.
+hash_email_password: Combinação do email com a senha.
+Ambos os hashes são armazenados no banco de dados.
 
-Armazenamento no Banco: O hash combinado é armazenado no campo hash da tabela users. -->
+Login: Durante o login, o sistema permite que o usuário insira tanto o nome de usuário quanto o email. Com base na
+entrada fornecida, o hash correspondente é gerado e verificado no banco de dados.
+
+Verificação de Hash: No authenticate.php, o sistema tenta encontrar o usuário no banco de dados usando os dois 
+possíveis hashes (hash_username_password ou hash_email_password), garantindo que o login possa ser feito com base 
+em qualquer um dos dois campos. 
+-->

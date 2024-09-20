@@ -24,8 +24,8 @@ if (isset($_GET['error'])) {
     <h2 class="title">Login</h2>
     <form action="authenticate.php" method="POST">
     <div class="form-group">
-        <label for="username">Nome de Usuario:</label>
-        <input type="text" name="username" required>
+        <label for="username">Username ou E-mail:</label>
+        <input type="text" name="login" required>
     </div>
     
     <div class="form-group">
