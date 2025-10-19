@@ -4,6 +4,6 @@
 int main(int argc, char *argv[])
 {
     printf("hello word");
-  // system("PAUSE");	
+    system("PAUSE");	
     return 0;
 }
